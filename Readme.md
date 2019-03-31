@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Гоша Кондрев](https://up.htmlacademy.ru/adaptive/16/user/960115).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Метельков] (https://htmlacademy.ru/profile/id512127) .
 
 ---
 
