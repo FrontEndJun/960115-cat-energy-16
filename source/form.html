@@ -5,16 +5,24 @@
     <title>Title</title>
   </head>
   <body>
-    <header class="p-header">
-      <a class="p-header__logo logo" href="index.html">
-        <img class="p-header__img p-header__img--logo"  src="img/logo-mobile.png" alt="Cat Energy" width="33" height="38">
-        <img class="p-header__img" src="img/logo-mobile-header.png" alt="Cat Energy" width="101" height="18">
+    <header class="page-header">
+      <a class="page-header__logo-link"  href="">
+        <img class="page-header__logo-img "  src="img/logo-header.png" alt="Cat Energy" width="191" height="38">
       </a>
-      <nav class="site-nav">
-        <button class="site-nav__toggle">Открыть меню</button>
-        <a class="site-nav__link site-nav__link--active" href="">Главная</a>
-        <a class="site-nav__link" href="">Каталог продукции</a>
-        <a class="site-nav__link" href="">Подбор программы</a>
+      <nav class="page-header__nav">
+        <button class="page-header__nav-toggle">Открыть меню</button>
+        <ul class="page-header__nav-list">
+          <li
+            class="page-header__nav-item">
+            <a class="page-header__nav-link page-header__nav-link--active" href="">Главная</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link" href="">Каталог продукции</a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link" href="">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="p-main">
@@ -36,9 +44,9 @@
         <a class="socials__link" href=""></a>
         <a class="socials__link" href=""></a>
       </section>
-      <section class="devs p-footer__devs">
-        <a class="devs__link" href="">HTML Academy
-          <img src="img/htmlacademy.png" alt="" class="devs__logo">
+      <section class="page-footer__devs">
+        <a class="page-footer__devs-link" href="">HTML Academy
+          <img class="page-footer__devs-logo" src="img/htmlacademy.png" alt="" >
         </a>
       </section>
     </footer>
