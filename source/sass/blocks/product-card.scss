@@ -5,7 +5,7 @@
 }
 
 .product-card__name {
-  @include  setFont(16px, 20px);
+  @include setFont(16px, 20px);
 
   width: 80px;
 
@@ -15,7 +15,7 @@
 .product-card__descr {
   @include setFont(12px,16px);
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: left;
 }
 

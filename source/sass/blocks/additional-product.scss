@@ -10,13 +10,13 @@
 .additional-product__option {
   @include setFont(16px, 14px);
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: lowercase;
 }
 
 .additional-product__price {
   @include setFont(16px, 14px);
 
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: uppercase;
 }
