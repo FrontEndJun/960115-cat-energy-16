@@ -1,14 +1,17 @@
-.show-more{
+.show-more {
   position: relative;
-  padding-bottom: 24px;
 
+  padding-bottom: 24px;
 }
 
-.show-more__option{
+.show-more__option {
   @include setFont(16px, 20px);
+
   font-weight: 400;
 }
-.show-more__text{
+
+.show-more__text {
   @include setFont(12px, 16px);
+
   font-family: Arial, sans-serif;
 }

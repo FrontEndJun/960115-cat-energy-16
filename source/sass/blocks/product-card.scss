@@ -1,24 +1,28 @@
-.product-card{
+.product-card {
   padding-bottom: 24px;
+
   border-top: 1px solid #d9d9d9;
 }
 
-.product-card__name{
+.product-card__name {
   @include  setFont(16px, 20px);
+
   width: 80px;
+
   font-weight: 400;
 }
 
-.product-card__descr{
-  font-family: Arial, sans-serif;
+.product-card__descr {
   @include setFont(12px,16px);
+
+  font-family: Arial, sans-serif;
   text-align: left;
 }
 
-.product-card__descr-option{
+.product-card__descr-option {
   font-weight: 400;
 }
 
-.product-card__descr-value{
+.product-card__descr-value {
   text-align: right;
 }

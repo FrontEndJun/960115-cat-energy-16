@@ -1,16 +1,20 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
-  min-width: 320px; }
+  min-width: 320px;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,9 @@
 .page-header__logo-link:active {
-  opacity: 0.6; }
+  opacity: 0.6;
+}
+
 .page-header__logo-link:hover {
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 /*# sourceMappingURL=page-header.css.map */

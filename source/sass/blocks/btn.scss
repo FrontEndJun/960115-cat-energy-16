@@ -1,24 +1,28 @@
-.btn{
+.btn {
   $main-btn-color: #68b738;
-  $secondary-btn-color:#f2f2f2;
-  box-sizing: border-box;
-  display: block;
-  padding: 10px 11px;
-  width: 100%;
-  color: white;
-  background-color: $main-btn-color;
-  text-transform: uppercase;
-  text-align: center;
+  $secondary-btn-color: #f2f2f2;
 
-  &:active{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 11px;
+
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: $main-btn-color;
+
+  &:active {
     color: transparentize(white, 0.5);
   }
 
   &--grey {
     color: darken($secondary-btn-color, 60%);
+
     background-color: $secondary-btn-color;
 
-    &:active{
+    &:active {
       color: transparentize(darken($secondary-btn-color, 70%), 0.5);
     }
   }

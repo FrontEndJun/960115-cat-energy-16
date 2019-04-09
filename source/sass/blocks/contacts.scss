@@ -1,15 +1,17 @@
-.contacts__offering{
-  margin: 0;
-  font-weight: 400;
+.contacts__offering {
   @include setFont(16px, 20px);
+
+  margin: 0;
+
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-.contacts__address{
-  font-family: Arial, sans-serif;
+.contacts__address {
   line-height: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.contacts__map-link{
+.contacts__map-link {
   display: block;
 }

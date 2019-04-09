@@ -1,21 +1,22 @@
-.additional-product{
 
-}
 
-.additional-product__title{
-  font-weight: 400;
+.additional-product__title {
   @include setFont(16px, 16px);
+
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-.additional-product__option{
-  font-family: Arial, sans-serif;
+.additional-product__option {
   @include setFont(16px, 14px);
+
+  font-family: Arial, sans-serif;
   text-transform: lowercase;
 }
 
-.additional-product__price{
-  font-family: Arial, sans-serif;
+.additional-product__price {
   @include setFont(16px, 14px);
+
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
 }

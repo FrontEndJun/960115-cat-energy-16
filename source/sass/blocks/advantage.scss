@@ -1,33 +1,37 @@
-.advantage{
-  position: relative;
+.advantage {
   @include setFont(14px, 18px);
+
+  position: relative;
+
   font-family: Arial, sans-serif;
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: -5px;
     left: -80px;
+
     width: 60px;
     height: 60px;
+
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--leaf::before{
+  &--leaf::before {
     background-image: url("../../img/advantage-leaf@1x.png");
   }
 
-  &--water::before{
+  &--water::before {
     background-image: url("../../img/advantage-powder@1x.png");
   }
 
-  &--cutlery::before{
+  &--cutlery::before {
     background-image: url("../../img/advantage-dining@1x.png");
   }
 
-  &--scales::before{
+  &--scales::before {
     background-image: url("../../img/advantage-clock@1x.png");
   }
 }
