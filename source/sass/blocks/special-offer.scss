@@ -1,0 +1,18 @@
+.special-offer{
+  width: 280px;
+  height: 289px;
+
+  background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@1x.jpg") ;
+  background-position: center 65px, center center;
+  background-repeat: no-repeat;
+  background-size: 55px 60px, auto ;
+}
+
+.special-offer__text{
+  margin: 0 auto;
+  width: 165px;
+  font-family: Arial, sans-serif;
+  @include setFont(16px,20px);
+  color: #ffffff;
+  text-align: center;
+}

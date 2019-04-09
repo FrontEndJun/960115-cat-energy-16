@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  min-width: 320px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin listReset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin linkSet() {
+  display: block;
+  text-align: center;
+}
+
+@mixin setFont($size: 14px, $heigth: 18px){
+  font-size: $size;
+  line-height: $heigth;
+}

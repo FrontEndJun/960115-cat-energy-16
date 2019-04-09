@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK;EACH,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,gBAAgB,EAAE,OAAO",
+"sources": ["diet.scss"],
+"names": [],
+"file": "diet.css"
+}

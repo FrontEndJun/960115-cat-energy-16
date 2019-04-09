@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,8BAAS;EACP,OAAO,EAAE,GAAG;AAGd,6BAAQ;EACN,OAAO,EAAE,GAAG",
+"sources": ["page-header.scss"],
+"names": [],
+"file": "page-header.css"
+}

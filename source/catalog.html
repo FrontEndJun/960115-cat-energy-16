@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="p-header">
+    <header class="page-header">
       <a class="page-header__logo-link"  href="">
         <img class="page-header__logo-img "  src="img/logo-header.png" alt="Cat Energy" width="191" height="38">
       </a>
       <nav class="page-header__nav">
-        <button class="page-header__nav-toggle">Открыть меню</button>
+        <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
         <ul class="page-header__nav-list">
           <li
             class="page-header__nav-item">
@@ -25,12 +26,12 @@
         </ul>
       </nav>
     </header>
-    <main class="p-main">
+    <main class="page-main">
       <section class="catalog">
 
         <h1 class="catalog__title">Каталог продукции</h1>
         <section class="catalog__list">
-          <article class="catalog__product-card product-card">
+          <article class="catalog__product-card product-card ">
             <div class="product-card__img-wrap">
               <img class="product-card__image" src="http://placehold.it/140x144" alt="" >
             </div>
@@ -181,7 +182,7 @@
           <article class="catalog__show-more show-more">
             <h3 class="show-more__option">Показать еще 100500 товаров</h3>
             <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-            <a href="" class="btn show-more__btn">Показать все</a>
+            <a href="" class="btn btn--grey show-more__btn">Показать все</a>
           </article>
         </section>
 
@@ -216,9 +217,6 @@
       <section class="special-offer">
         <p class="special-offer__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
-    </main>
-
-    <footer class="p-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <strong class="contacts__offering">приглашаем
@@ -228,8 +226,12 @@
           Санкт-Петербург</p>
         <img class="contacts__map" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
-      <a class="p-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
-      <section class="socials p-footer__socials">
+    </main>
+
+    <footer class="page-footer">
+
+      <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
+      <section class="socials page-footer__socials">
         <a class="socials__link" href=""></a>
         <a class="socials__link" href=""></a>
         <a class="socials__link" href=""></a>

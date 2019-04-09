@@ -1,0 +1,15 @@
+.contacts__offering{
+  margin: 0;
+  font-weight: 400;
+  @include setFont(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__address{
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+}
+
+.contacts__map-link{
+  display: block;
+}

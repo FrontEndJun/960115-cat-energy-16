@@ -1,0 +1,50 @@
+.example{
+  padding: 18px 0 40px;
+  background-color: #f2f2f2;
+}
+
+.example__title{
+  margin: 0 0 25px;
+  @include  setFont(36px, 60px);
+  font-weight: 400;
+}
+
+.example__descr{
+  margin: 0 0 25px;
+  padding-right: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.example__stats{
+  margin: 0 0 34px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 122px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.example__stats-title{
+  position: absolute;
+  bottom: -10px;
+  left: 18px;
+  width: 57px;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
+  @include setFont(12px, 12px);
+  background-color: #f2f2f2;
+}
+
+.example__stats-value{
+  padding: 15px 0;
+  @include setFont(24px, 24px);
+}
+
+.example__total{
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 20px;
+}

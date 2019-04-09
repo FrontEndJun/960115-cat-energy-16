@@ -1,0 +1,25 @@
+.btn{
+  $main-btn-color: #68b738;
+  $secondary-btn-color:#f2f2f2;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 11px;
+  width: 100%;
+  color: white;
+  background-color: $main-btn-color;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:active{
+    color: transparentize(white, 0.5);
+  }
+
+  &--grey {
+    color: darken($secondary-btn-color, 60%);
+    background-color: $secondary-btn-color;
+
+    &:active{
+      color: transparentize(darken($secondary-btn-color, 70%), 0.5);
+    }
+  }
+}
