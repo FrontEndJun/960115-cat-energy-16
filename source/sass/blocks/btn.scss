@@ -1,6 +1,4 @@
 .btn {
-  $main-btn-color: #68b738;
-  $secondary-btn-color: #f2f2f2;
 
   display: block;
   box-sizing: border-box;
@@ -11,19 +9,19 @@
   color: white;
   text-transform: uppercase;
 
-  background-color: $main-btn-color;
+  background-color: #68b738;
 
   &:active {
     color: transparentize(white, 0.5);
   }
 
   &--grey {
-    color: darken($secondary-btn-color, 60%);
+    color: darken(#f2f2f2, 60%);
 
-    background-color: $secondary-btn-color;
+    background-color: #f2f2f2;
 
     &:active {
-      color: transparentize(darken($secondary-btn-color, 70%), 0.5);
+      color: transparentize(darken(#f2f2f2, 70%), 0.5);
     }
   }
 }
