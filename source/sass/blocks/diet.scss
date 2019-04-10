@@ -1,0 +1,63 @@
+.diet {
+  padding: 30px 20px 22px;
+
+  background-color: #f2f2f2;
+
+  &--slim {
+    background-image: url("../../img/diet-slim.png");
+    background-repeat: no-repeat;
+    background-position: 22px 23px;
+    background-clip: border-box;
+  }
+
+  &--pro {
+    background-image: url("../../img/diet-pro.png");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+  }
+}
+
+.diets__diet {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+.diet__title {
+  font-size: 24px;
+  line-height: 37px;
+
+  margin: 0 0 40px 73px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.diet__text {
+  margin: 0 0 20px;
+  padding-bottom: 22px;
+
+  font-family: "Arial", sans-serif;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.diet__link {
+  font-size: 16px;
+  line-height: 16px;
+
+  padding-right: 40px;
+
+  color: black;
+  text-transform: uppercase;
+
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 24px 11px;
+  background-clip: border-box;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
