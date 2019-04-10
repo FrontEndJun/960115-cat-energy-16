@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,iBAAiB;EACf,KAAK,EAAE,OAAO;;AAGhB,aAAa;EACX,WAAW,EAAE,GAAG",
-"sources": ["promo.scss"],
-"names": [],
-"file": "promo.css"
-}
