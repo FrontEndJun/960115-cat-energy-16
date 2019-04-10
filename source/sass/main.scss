@@ -22,20 +22,4 @@ img {
   height: auto;
 }
 
-@mixin listReset() {
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
-}
-
-@mixin linkSet() {
-  display: block;
-
-  text-align: center;
-}
-
-@mixin setFont($size: 14px, $heigth: 18px) {
-  font-size: $size;
-  line-height: $heigth;
-}

@@ -5,7 +5,8 @@
 }
 
 .example__title {
-  @include setFont(36px, 60px);
+  font-size: 36px;
+  line-height: 60px;
 
   margin: 0 0 25px;
 
@@ -35,7 +36,8 @@
 }
 
 .example__stats-title {
-  @include setFont(12px, 12px);
+  font-size: 12px;
+  line-height: 12px;
 
   position: absolute;
   bottom: -10px;
@@ -50,7 +52,8 @@
 }
 
 .example__stats-value {
-  @include setFont(24px, 24px);
+  font-size: 24px;
+  line-height: 24px;
 
   padding: 15px 0;
 }

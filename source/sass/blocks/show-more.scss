@@ -5,13 +5,15 @@
 }
 
 .show-more__option {
-  @include setFont(16px, 20px);
+  font-size: 16px;
+  line-height: 20px;
 
   font-weight: 400;
 }
 
 .show-more__text {
-  @include setFont(12px, 16px);
+  font-size: 12px;
+  line-height: 16px;
 
   font-family: "Arial", sans-serif;
 }

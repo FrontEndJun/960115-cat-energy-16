@@ -16,7 +16,7 @@ $nav-link-color: black;
 }
 
 .page-header__nav-list {
-  @include listReset();
+  @include list-reset();
   //display: none;
 
   height: auto;
@@ -81,8 +81,10 @@ $nav-link-color: black;
 }
 
 .page-header__nav-link {
-  @include linkSet;
-  @include setFont(20px, 20px);
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
 
   padding: 13px 0 12px;
 

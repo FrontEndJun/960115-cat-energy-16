@@ -3,7 +3,6 @@
   padding-top: 30px;
 
   color: #ffffff;
-  //background-color: #68b738;
 
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -11,7 +10,8 @@
 }
 
 .promo__title {
-  @include setFont(36px, 36px);
+  font-size: 36px;
+  line-height: 36px;
 
   margin: 0 0 20px 0;
 

@@ -1,6 +1,6 @@
 .contacts__offering {
-  @include setFont(16px, 20px);
-
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
 
   font-weight: 400;

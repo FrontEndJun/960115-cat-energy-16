@@ -14,7 +14,6 @@
     background-image: url("../../img/diet-pro.png");
     background-repeat: no-repeat;
     background-position: 13px 24px;
-    //background-clip: border-box;
   }
 }
 
@@ -25,7 +24,8 @@
 }
 
 .diet__title {
-  @include setFont(24px, 37px);
+  font-size: 24px;
+  line-height: 37px;
 
   margin: 0 0 40px 73px;
 
@@ -43,7 +43,8 @@
 }
 
 .diet__link {
-  @include setFont(16px, 16px);
+  font-size: 16px;
+  line-height: 16px;
 
   padding-right: 40px;
 
