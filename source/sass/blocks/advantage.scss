@@ -2,6 +2,9 @@
   font-size: 14px;
   line-height: 18px;
   padding: 3px 0 3px 80px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 80px;
 
   position: relative;
 
@@ -49,7 +52,10 @@
     box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
-    padding: 111px 80px 45px 0;
+    padding-top: 111px;
+    padding-right: 80px;
+    padding-bottom: 45px;
+    padding-left: 0px;
 
     &::before {
       width: 80px;
@@ -65,7 +71,7 @@
     font-size: 281px;
     line-height: 1;
     color: $bg-grey;
-    font-family: "Oswald", "sans-serif";
+    font-family: "Oswald", sans-serif;
     z-index: -1;
   }
 

@@ -35,7 +35,8 @@
   font-size: 16px;
   line-height: 20px;
   width: 80px;
-  margin: 20px 0 13px;
+  margin: 20px 0;
+  margin-bottom: 13px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -81,7 +82,8 @@
 
   .product-card__img-wrap{
     display: flex;
-    margin: -82px -38px 38px;
+    margin: -82px -38px;
+    margin-bottom: 38px;
     align-items: flex-end;
     min-height: 208px;
   }
@@ -99,7 +101,7 @@
   }
 
   .product-card__descr{
-    margin: 0 0 38px;
+    margin-bottom: 38px;
     font-size: 16px;
     line-height: 32px;
   }
@@ -115,5 +117,4 @@
   .product-card{
     width: 245px;
   }
-
 }

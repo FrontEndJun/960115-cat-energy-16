@@ -54,7 +54,8 @@
     flex-direction: column;
     align-items: center;
     width: 324px;
-    padding: 56px 38px 40px;
+    padding: 56px 38px;
+    padding-bottom: 40px;
     border: 1px solid darken($bg-grey, 10%);
 
     &::before {

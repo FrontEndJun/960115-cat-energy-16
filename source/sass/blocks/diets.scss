@@ -11,8 +11,6 @@
   }
 
   .diets{
-
-    margin-left: -80px;
     margin-bottom: 48px;
   }
 }
@@ -22,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 76px;
+    margin-left: -80px;
   }
 
   .diets__diet{

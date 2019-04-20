@@ -1,5 +1,7 @@
 .diet {
-  padding: 30px 20px 22px;
+  padding: 30px 20px;
+  padding-bottom: 22px;
+
 
   background-color: #f2f2f2;
 
@@ -22,14 +24,17 @@
   font-size: 24px;
   line-height: 37px;
 
-  margin: 0 0 40px 73px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: 73px;
 
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .diet__text {
-  margin: 0 0 20px;
+  margin: 0;
+  margin-bottom: 20px;
   padding-bottom: 22px;
 
   font-family: "Arial", sans-serif;
@@ -79,12 +84,13 @@
 
   .diet__title {
     font-size: 36px;
-    margin: 0 0 18px 0;
+    margin: 0;
+    margin-bottom: 18px;
   }
 
   .diet__text {
     width: 375px;
-    margin: 0 0 60px;
+    margin-bottom: 60px;
     padding-bottom: 0;
 
     border-bottom: none;
