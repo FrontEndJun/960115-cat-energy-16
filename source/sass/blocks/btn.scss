@@ -1,0 +1,27 @@
+.btn {
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 12px;
+
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: #68b738;
+
+  &:active {
+    color: transparentize(white, 0.5);
+  }
+
+  &--grey {
+    color: darken(#f2f2f2, 60%);
+
+    background-color: #f2f2f2;
+
+    &:active {
+      color: transparentize(darken(#f2f2f2, 70%), 0.5);
+    }
+  }
+}
