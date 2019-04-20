@@ -5,26 +5,32 @@
     <title>Title</title>
   </head>
   <body>
-    <header class="page-header">
+  <header class="page-header">
+    <div class="container page-header__container">
       <a class="page-header__logo-link"  href="">
-        <img class="page-header__logo-img "  src="img/logo-header.png" alt="Cat Energy" width="191" height="38">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width:1300px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
+          <img class="page-header__logo-img "  src="img/logo-mobile.svg" alt="Cat Energy" >
+        </picture>
       </a>
-      <nav class="page-header__nav">
-        <button class="page-header__nav-toggle">Открыть меню</button>
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+        <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
         <ul class="page-header__nav-list">
-          <li
-            class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active" href="">Главная</a>
+          <li class="page-header__nav-item">
+            <a class="page-header__nav-link" href="index.html">Главная</a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="">Каталог продукции</a>
+            <a class="page-header__nav-link page-header__nav-link--active" href="">Каталог продукции</a>
           </li>
           <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="">Подбор программы</a>
+            <a class="page-header__nav-link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+
+  </header>
     <main class="p-main">
 
     </main>

@@ -12,10 +12,12 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+      .pipe(sass())
+      .pipe(postcss([
+        autoprefixer({
+          browsers: ['last 2 versions']
+        })
+      ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
