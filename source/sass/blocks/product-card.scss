@@ -39,6 +39,7 @@
   margin-bottom: 13px;
   font-weight: 400;
   text-transform: uppercase;
+  color: #000;
 }
 
 .product-card__descr-wrap{
@@ -51,10 +52,10 @@
   line-height: 16px;
   border-collapse: collapse;
   font-family: "Arial", sans-serif;
-  text-align: left;
 }
 
 .product-card__descr-option {
+  text-align: left;
   font-weight: 400;
 }
 
@@ -86,6 +87,7 @@
     margin-bottom: 38px;
     align-items: flex-end;
     min-height: 208px;
+    height: 208px;
   }
 
   .product-card__descr-wrap{

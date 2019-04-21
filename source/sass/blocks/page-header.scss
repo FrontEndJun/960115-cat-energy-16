@@ -279,10 +279,15 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -2;
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .page-header__nav {
-    width: 480px;
+    width: 482px;
   }
 
   .page-header__nav-link {

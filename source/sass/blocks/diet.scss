@@ -1,24 +1,37 @@
 .diet {
   padding: 30px 20px;
   padding-bottom: 22px;
+  position: relative;
 
 
   background-color: #f2f2f2;
 
-  &--slim {
-    background-image: url("../../img/diet-slim.png");
-    background-repeat: no-repeat;
-    background-position: 22px 23px;
-    background-clip: border-box;
-  }
-
-  &--pro {
-    background-image: url("../../img/diet-pro.png");
-    background-repeat: no-repeat;
-    background-position: 13px 24px;
-  }
 }
 
+
+.diet__icon{
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $bg-green;
+}
+
+.diet__icon svg{
+  position: absolute;
+}
+
+.diet__icon--slim svg{
+  top: -6%;
+  left: 16%;
+}
+
+.diet__icon--pro svg{
+  top: 22%;
+  left: -18%;
+}
 
 .diet__title {
   font-size: 24px;
@@ -82,6 +95,23 @@
     padding: 74px 52px 60px;
   }
 
+  .diet__icon{
+    top: 91px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .diet__icon--slim svg{
+    width: 140px;
+    height: 194px;
+  }
+
+  .diet__icon--pro svg{
+    width: 268px;
+    height: 112px;
+  }
+
   .diet__title {
     font-size: 36px;
     margin: 0;
@@ -112,6 +142,23 @@
     width: 570px;
     padding-top: 72px;
     padding-bottom: 62px;
+  }
+
+  .diet__icon{
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .diet__icon--slim svg{
+    width: 70px;
+    height: 97px;
+  }
+
+  .diet__icon--pro svg{
+    width: 134px;
+    height: 56px;
   }
 
   .diet__title {
