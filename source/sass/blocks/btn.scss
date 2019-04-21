@@ -1,5 +1,4 @@
 .btn {
-
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -11,6 +10,10 @@
 
   background-color: #68b738;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
   &:active {
     color: transparentize(white, 0.5);
   }
@@ -19,6 +22,10 @@
     color: darken(#f2f2f2, 60%);
 
     background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
 
     &:active {
       color: transparentize(darken(#f2f2f2, 70%), 0.5);

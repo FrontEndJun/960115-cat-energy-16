@@ -1,16 +1,18 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+//*,
+//*::before,
+//*::after {
+//  box-sizing: inherit;
+//}
 
 body {
   min-width: 320px;
   margin: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: "Oswald", sans-serif;
+  counter-reset: advantage-number;
 }
 
 a {

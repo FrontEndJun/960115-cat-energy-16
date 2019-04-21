@@ -1,87 +1,104 @@
-.catalog{
+.catalog {
   overflow-x: hidden;
 }
 
 .catalog__title {
-  font-size: 36px;
-  line-height: 60px;
+  position: relative;
+
   margin: 0;
-  padding: 15px 0 28px;
+  padding-top: 15px;
+  padding-bottom: 28px;
 
   font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
 
-  position: relative;
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
     right: 50%;
+    bottom: 0;
+
     width: 50vw;
     height: 1px;
-    background-color: #d9d9d9;
     overflow: visible;
+
+    background-color: #d9d9d9;
   }
+
   &::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
+
     width: 50vw;
     height: 1px;
-    background-color: #d9d9d9;
     overflow: visible;
+
+    background-color: #d9d9d9;
   }
 }
 
-.catalog__additionals{
-  margin: 0 0 39px;
+.catalog__additionals {
+  margin: 0;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__title{
-    font-size: 60px;
+  .catalog__title {
     margin-bottom: 162px;
     padding: 0;
-    &::before{
+
+    font-size: 60px;
+
+    &::before {
       display: none;
     }
-    &:after{
+
+    &::after {
       display: none;
     }
   }
-  .catalog__list{
+
+  .catalog__list {
     display: flex;
     flex-flow: wrap;
-    margin-left: -60px;
     margin-top: -140px;
     margin-bottom: 72px;
+    margin-left: -60px;
   }
 
-  .catalog__product-card{
-    margin: 140px 0 0  60px;
+  .catalog__product-card {
+    margin: 0;
+    margin-top: 140px;
+    margin-left: 60px;
   }
 
-  .catalog__show-more{
-     margin: 140px 0 0  60px;
+  .catalog__show-more {
+    margin-top: 140px;
+    margin-left: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__container{
+  .catalog__container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .catalog__list{
-    margin-left: -80px;
+  .catalog__list {
     margin-top: -142px;
+    margin-left: -80px;
   }
 
-  .catalog__product-card{
-    margin: 142px 0 0  80px;
+  .catalog__product-card {
+    margin-top: 142px;
+    margin-left: 80px;
   }
 
-  .catalog__show-more{
-    margin: 142px 0 0  80px;
+  .catalog__show-more {
+    margin-top: 142px;
+    margin-left: 80px;
   }
 }

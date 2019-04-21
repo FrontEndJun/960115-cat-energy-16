@@ -4,29 +4,28 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .diets__diet:not(:last-of-type) {
     margin-bottom: 30px;
   }
 
-  .diets{
-
-    margin-left: -80px;
+  .diets {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .diets{
+  .diets {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 76px;
+    margin-left: -80px;
   }
 
-  .diets__diet{
+  .diets__diet {
     margin-left: 80px;
   }
+
   .diets__diet:not(:last-of-type) {
     margin-bottom: 0;
   }
