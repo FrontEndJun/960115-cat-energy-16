@@ -1,104 +1,114 @@
-.additional-product{
+.additional-product {
   display: flex;
   flex-wrap: wrap;
   padding-top: 13px;
   padding-bottom: 24px;
+
+  word-break: break-word;
+
   border-bottom: 1px solid darken($bg-grey, 10%);
 
-  &:first-of-type{
+  &:first-of-type {
     border-top: 1px solid darken($bg-grey, 10%);
   }
-  word-break: break-word;
 }
 
 .additional-product__title {
   width: 100%;
   margin: 0;
   margin-bottom: 13px;
-  font-size: 16px;
-  line-height: 16px;
 
   font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
 .additional-product__option {
   width: 50%;
-  font-size: 16px;
-  line-height: 16px;
   margin: 0;
   margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 16px;
   font-family: "Arial", sans-serif;
   text-transform: lowercase;
 }
 
 .additional-product__price {
   width: 50%;
-  text-align: right;
-  font-size: 16px;
-  line-height: 16px;
   margin: 0;
   margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 16px;
   font-family: "Arial", sans-serif;
+  text-align: right;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
-  .additional-product{
+  .additional-product {
     padding-top: 25px;
     padding-right: 37px;
     padding-bottom: 27px;
     padding-left: 37px;
   }
 
-  .additional-product__title{
+  .additional-product__title {
     width: 316px;
     margin-bottom: 25px;
+
     font-size: 20px;
     line-height: 20px;
   }
 
-  .additional-product__option{
+  .additional-product__option {
     width: 222px;
     margin-bottom: 25px;
+
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
-  .additional-product__price{
+  .additional-product__price {
     width: 94px;
     margin-bottom: 25px;
+
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .additional-product{
+  .additional-product {
     align-items: center;
     padding: 15px 0;
   }
 
-  .additional-product__title{
+  .additional-product__title {
     width: 325px;
     margin: 0;
+
     text-align: left;
   }
 
-  .additional-product__option{
+  .additional-product__option {
     width: 245px;
     margin: 0;
+
     text-align: left;
   }
 
-  .additional-product__price{
+  .additional-product__price {
     width: 80px;
     margin: 0;
+
     text-align: left;
   }
 
-  .additional-product__btn{
+  .additional-product__btn {
     width: 245px;
   }
 }

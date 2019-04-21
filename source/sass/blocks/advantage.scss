@@ -1,12 +1,12 @@
 .advantage {
-  font-size: 14px;
-  line-height: 18px;
+  position: relative;
+
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 80px;
 
-  position: relative;
-
+  font-size: 14px;
+  line-height: 18px;
   font-family: "Arial", sans-serif;
 
   &::before {
@@ -21,32 +21,36 @@
     background-color: #68b738;
     background-repeat: no-repeat;
     background-position: center;
+
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx){
+    (min-resolution: $retina-dppx) {
       background-size: 50px 50px;
     }
   }
 
   &--leaf::before {
     background-image: url("../../img/advantage-leaf@1x.png");
+
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx){
+    (min-resolution: $retina-dppx) {
       background-image: url("../../img/advantage-leaf@2x.png");
     }
   }
 
   &--water::before {
     background-image: url("../../img/advantage-powder@1x.png");
+
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx){
+    (min-resolution: $retina-dppx) {
       background-image: url("../../img/advantage-powder@2x.png");
     }
   }
 
   &--cutlery::before {
     background-image: url("../../img/advantage-dining@1x.png");
+
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx){
+    (min-resolution: $retina-dppx) {
       background-image: url("../../img/advantage-dining@2x.png");
     }
   }
@@ -61,42 +65,43 @@
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
-  .advantage{
-    counter-increment: advantage-number;
+  .advantage {
     display: block;
-    width: 325px;
     box-sizing: border-box;
-    font-size: 16px;
-    line-height: 24px;
+    width: 325px;
     padding-top: 111px;
     padding-right: 80px;
     padding-bottom: 45px;
     padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    counter-increment: advantage-number;
 
     &::before {
       width: 80px;
       height: 80px;
     }
 
-    &::after{
+    &::after {
       content: counter(advantage-number);
       position: absolute;
       top: -38px;
       right: 80px;
+      z-index: -1;
+
       font-size: 281px;
       line-height: 1;
-      color: $bg-grey;
       font-family: "Oswald", sans-serif;
-      z-index: -1;
+      color: $bg-grey;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .advantage{
+  .advantage {
     width: 245px;
     padding-right: 0;
 
@@ -105,9 +110,8 @@
     }
   }
 
-  .advantage__number{
+  .advantage__number {
     top: -38px;
     right: 0;
   }
-
 }
