@@ -8,10 +8,9 @@
   background-position: top center;
   background-clip: border-box;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto ;
+    background-size: 320px auto;
   }
 }
 
