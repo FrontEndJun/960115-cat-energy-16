@@ -10,10 +10,13 @@
     "csscomb": "^4.2.0",
     "gulp": "4.0.x",
     "gulp-csscomb": "^3.0.8",
+    "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-svg-sprite": "^1.5.0",
+    "npx": "^10.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -41,5 +44,7 @@
   "engines": {
     "node": "8.15"
   },
-  "dependencies": {}
+  "dependencies": {
+    "imagemin-webp": "^5.0.0"
+  }
 }

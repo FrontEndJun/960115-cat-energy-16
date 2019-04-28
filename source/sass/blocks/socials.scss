@@ -2,32 +2,78 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-between;
-  width: 127px;
+  justify-content: center;
+  align-items: center;
+  //max-width: 130px;
+  padding: 24px 0;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+//.socials__item{
+//  display: flex;
+//  align-items: center;
+//}
+
+.socials__item + .socials__item {
+  margin-left: 40px;
 }
 
 .socials__link {
-  display: block;
-  width: 24px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  //width: 24px;
+  //height: 20px;
 
   font-size: 0;
+}
 
-  &--vk {
-    background-image: url("../../img/icon-vk-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+.socials__link svg {
+  fill: #666666;
+}
+
+.socials__link:hover svg {
+  fill: #68b738;
+}
+
+.socials__link:active {
+  opacity: 0.5;
+}
+
+.socials__link--vk svg {
+  width: 22px;
+  height: 12px;
+}
+
+.socials__link--ig svg {
+  width: 16px;
+  height: 16px;
+}
+
+.socials__link--fb svg {
+  width: 10px;
+  height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    padding: 0;
+
+    border-bottom: none;
   }
 
-  &--ig {
-    background-image: url("../../img/icon-insta-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .socials__link--vk svg {
+    width: 30px;
+    height: 16px;
   }
 
-  &--fb {
-    background-image: url("../../img/icon-fb-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .socials__link--ig svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .socials__link--fb svg {
+    width: 14px;
+    height: 28px;
   }
 }

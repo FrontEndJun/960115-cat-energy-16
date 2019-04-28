@@ -1,4 +1,6 @@
 "use strict";
+var Comb = require('csscomb');
+var comb = new Comb('csscombcust');
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -7,6 +9,14 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var imagemin = require('imagemin');
+var imageminWebp = require('imagemin-webp');
+var svgSprite = require('gulp-svg-sprite');
+
+function csscomb(done) {
+  comb.processPath('source/css/style.css');
+  done();
+}
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -36,4 +46,27 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("start", gulp.series("css", csscomb, "server"));
+
+
+gulp.task("webp", () => {
+  return imagemin(['source/img/*.{jpg,png}'], 'build/img/', {
+    use: [
+      imageminWebp({quality: 80})
+    ]
+  });
+});
+
+gulp.task("sprite", function (){
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgSprite({
+        mode: {
+          symbol: {
+            sprite: "../sprite.svg"
+          }
+        }
+      }
+    ))
+    .pipe(gulp.dest("source/img"));
+});

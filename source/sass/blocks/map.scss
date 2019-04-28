@@ -1,0 +1,16 @@
+.map {
+  width: 100%;
+  height: 365px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 400px;
+  }
+}
