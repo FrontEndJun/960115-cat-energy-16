@@ -1,6 +1,4 @@
 "use strict";
-var Comb = require('csscomb');
-
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -38,7 +36,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series(csscomb, "css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
