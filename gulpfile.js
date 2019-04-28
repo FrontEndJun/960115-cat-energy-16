@@ -1,6 +1,6 @@
 "use strict";
 var Comb = require('csscomb');
-var comb = new Comb('csscombcust');
+
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -13,10 +13,6 @@ var imagemin = require('imagemin');
 var imageminWebp = require('imagemin-webp');
 var svgSprite = require('gulp-svg-sprite');
 
-function csscomb(done) {
-  comb.processPath('source/css/style.css');
-  done();
-}
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -42,12 +38,12 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series(csscomb, "css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
 
-gulp.task("start", gulp.series("css", csscomb, "server"));
+gulp.task("start", gulp.series("css", "server"));
 
 
 gulp.task("webp", () => {

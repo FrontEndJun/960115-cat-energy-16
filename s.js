@@ -1,4 +1,5 @@
 let Comb = require('csscomb');
-let comb = new Comb('csscombcust');
-// comb.processPath('C://Users/shop/WebstormProjects/CatEnergy/source/sass/*/*');
-comb.processPath('C://Users/shop/WebstormProjects/CatEnergy/source/css');
+let config = require('./csscombcust');
+var comb = new Comb(config);
+comb.processPath('C://Users/shop/WebstormProjects/CatEnergy/source/sass');
+// comb.processPath('C://Users/shop/WebstormProjects/CatEnergy/source/css');
