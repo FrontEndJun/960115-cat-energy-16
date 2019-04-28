@@ -11,5 +11,5 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
-/csscomb.js
-/csscombcus.json
+csscomb.js
+csscombcust.json
