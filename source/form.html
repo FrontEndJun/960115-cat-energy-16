@@ -35,27 +35,51 @@
     <main class="p-main">
 
     </main>
-    <footer class="p-footer">
-      <section class="contacts">
+  <footer class="page-footer">
+    <section class="contacts">
+
+
+      <div class="contacts__info">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <strong class="contacts__offering">приглашаем
-          к сотрудничеству
-          дилеров!</strong>
+        <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-        <img class="contacts__map" src="img/map.jpg" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <span>Санкт-Петербург</span></p>
+      </div>
+
+
+      <section class="map contacts__map" id="map-canvas">
+
       </section>
-      <a class="p-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
-      <section class="socials p-footer__socials">
-        <a class="socials__link" href=""></a>
-        <a class="socials__link" href=""></a>
-        <a class="socials__link" href=""></a>
-      </section>
+    </section>
+    <div class="container page-footer__container">
+      <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
+      <ul class="socials page-footer__socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--ig" href="">
+            <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+            Instagram
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--fb" href=""><svg ><use
+            xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
+        </li>
+      </ul>
       <section class="page-footer__devs">
         <a class="page-footer__devs-link" href="">HTML Academy
-          <img class="page-footer__devs-logo" src="img/htmlacademy.png" alt="" >
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </a>
       </section>
-    </footer>
+    </div>
+  </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2cc36e38-470d-4e82-b63d-637d0c2cab16" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/ymaps.js"></script>
   </body>
 </html>
