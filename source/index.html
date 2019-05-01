@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Cat Energy - Функциональное питание для котов и кошек</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--index">
       <div class="container page-header__container">
         <a class="page-header__logo-link">
@@ -112,7 +115,6 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <section class="contacts">
 
@@ -149,7 +151,7 @@
         <section class="page-footer__devs">
           <a class="page-footer__devs-link" href="">HTML Academy
             <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </section>
@@ -157,7 +159,6 @@
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2cc36e38-470d-4e82-b63d-637d0c2cab16" type="text/javascript"></script>
     <script src="js/script.js"></script>
-
     <script type="text/javascript" src="js/ymaps.js"></script>
   </body>
 </html>

@@ -3,83 +3,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-  <header class="page-header">
-    <div class="container page-header__container">
-      <a class="page-header__logo-link"  href="index.html">
-        <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width:1300px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
-          <img class="page-header__logo-img "  src="img/logo-mobile.svg" alt="Cat Energy" >
-        </picture>
-      </a>
-      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-        <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link " href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
     </div>
-
-  </header>
-    <main class="p-main">
-
-    </main>
-  <footer class="page-footer">
-    <section class="contacts">
-
-
-      <div class="contacts__info">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          <span>Санкт-Петербург</span></p>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a class="page-header__logo-link"  href="index.html">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width:1300px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
+            <img class="page-header__logo-img "  src="img/logo-mobile.svg" alt="Cat Energy" >
+          </picture>
+        </a>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link " href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link page-header__nav-link--active" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
+    </header>
+      <main class="p-main">
 
-      <section class="map contacts__map" id="map-canvas">
+      </main>
+    <footer class="page-footer">
+      <section class="contacts">
 
+
+        <div class="contacts__info">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span></p>
+        </div>
+
+
+        <section class="map contacts__map" id="map-canvas">
+
+        </section>
       </section>
-    </section>
-    <div class="container page-footer__container">
-      <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
-      <ul class="socials page-footer__socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--ig" href="">
-            <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-            Instagram
+      <div class="container page-footer__container">
+        <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
+        <ul class="socials page-footer__socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--ig" href="">
+              <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              Instagram
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--fb" href=""><svg ><use
+              xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
+          </li>
+        </ul>
+        <section class="page-footer__devs">
+          <a class="page-footer__devs-link" href="">HTML Academy
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--fb" href=""><svg ><use
-            xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
-        </li>
-      </ul>
-      <section class="page-footer__devs">
-        <a class="page-footer__devs-link" href="">HTML Academy
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
-          </svg>
-        </a>
-      </section>
-    </div>
-  </footer>
+        </section>
+      </div>
+    </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2cc36e38-470d-4e82-b63d-637d0c2cab16" type="text/javascript"></script>
     <script src="js/script.js"></script>
-
     <script type="text/javascript" src="js/ymaps.js"></script>
   </body>
 </html>
