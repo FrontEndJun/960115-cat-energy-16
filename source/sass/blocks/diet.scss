@@ -71,7 +71,7 @@
     width: 32px;
     height: 11px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 24px 11px;
@@ -79,7 +79,7 @@
 
   &:hover {
     &::before {
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
       background-size: 32px 11px;
     }
   }
