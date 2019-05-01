@@ -34,6 +34,3 @@ function init () {
     else myMap.setCenter(address);
   }
 }
-
-
-

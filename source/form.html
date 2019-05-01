@@ -2,84 +2,169 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cat Energy - подбор программы питания</title>
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-  <header class="page-header">
-    <div class="container page-header__container">
-      <a class="page-header__logo-link"  href="index.html">
-        <picture>
-          <source srcset="img/logo-desktop.svg" media="(min-width:1300px)">
-          <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
-          <img class="page-header__logo-img "  src="img/logo-mobile.svg" alt="Cat Energy" >
-        </picture>
-      </a>
-      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-        <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
-        <ul class="page-header__nav-list">
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link " href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="page-header__nav-item">
-            <a class="page-header__nav-link page-header__nav-link--active" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
     </div>
-
-  </header>
-    <main class="p-main">
-
-    </main>
-  <footer class="page-footer">
-    <section class="contacts">
-
-
-      <div class="contacts__info">
-        <h2 class="visually-hidden">Наш адрес</h2>
-        <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          <span>Санкт-Петербург</span></p>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a class="page-header__logo-link"  href="index.html">
+          <picture>
+            <source srcset="img/logo-desktop.svg" media="(min-width:1300px)">
+            <source srcset="img/logo-tablet.svg" media="(min-width:768px)">
+            <img class="page-header__logo-img "  src="img/logo-mobile.svg" alt="Cat Energy" >
+          </picture>
+        </a>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <button class="page-header__nav-toggle"><span class="page-header__nav-toggle-bar"></span>Открыть меню</button>
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link " href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-link page-header__nav-link--active" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
+    </header>
+    <main class="page-main">
+      <section class="program-selection">
+        <div class="container">
+          <h1 class="program-selection__title">Подбор программы</h1>
+          <form class=" programm-selection__form program-form " action="" method="post">
+            <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <fieldset class="program-form__field">
+              <div class="program-form__input-wrap">
+                <label for="name">имя:*</label>
+                <input type="text" id="name" name="name">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="weight">вес(кг):*</label>
+                <input type="text" id="weight" name="weight">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="age">возраст(лет):</label>
+                <input type="text" id="age" name="age">
+              </div>
+            </fieldset>
 
-      <section class="map contacts__map" id="map-canvas">
+            <fieldset class="program-form__field">
+              <div class="program-form__input-wrap">
+                <input type="radio" id="slim" name="food-program" value="slim">
+                <label for="slim">похудение</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="radio" id="pro" name="food-program" value="pro">
+                <label for="pro">набор массы</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="radio" id="advice" name="food-program" value="advice">
+                <label for="advice">не знаю (нужен ваш совет)</label>
+                <span class="indicator"></span>
+              </div>
+            </fieldset>
 
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Контактные данные (владельца кота)</legend>
+              <div class="program-form__input-wrap">
+                <label for="mail">e-mail:*</label>
+                <input type="email" id="mail" name="mail">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="tel">телефон:*</label>
+                <input type="tel" id="tel" name="tel">
+              </div>
+            </fieldset>
+
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Комментарий</legend>
+              <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Дополнительно</legend>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="sweetener" name="add-items" value="slim">
+                <label for="sweetener">Сахарозаменитель</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="water" name="add-items" value="pro">
+                <label for="water">питьевая вода</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="milk" name="add-items" value="milk">
+                <label for="milk">молоко</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap" >
+                <input type="checkbox" id="vitamins" name="add-items" value="vitamins">
+                <label for="vitamins">витамины</label>
+                <span class="indicator"></span>
+              </div>
+            </fieldset>
+            <button class="btn btn--submit" type="submit">отправить заявку</button>
+            <p class="program-form__legend"><sup>*</sup>&mdash; Обязательные поля</p>
+          </form>
+        </div>
       </section>
-    </section>
-    <div class="container page-footer__container">
-      <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
-      <ul class="socials page-footer__socials">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--ig" href="">
-            <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-            Instagram
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+
+
+        <div class="contacts__info">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span></p>
+        </div>
+
+
+        <section class="map contacts__map" id="map-canvas">
+
+        </section>
+      </section>
+      <div class="container page-footer__container">
+        <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
+        <ul class="socials page-footer__socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--ig" href="">
+              <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              Instagram
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--fb" href=""><svg ><use
+              xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
+          </li>
+        </ul>
+        <section class="page-footer__devs">
+          <a class="page-footer__devs-link" href="">HTML Academy
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--fb" href=""><svg ><use
-            xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
-        </li>
-      </ul>
-      <section class="page-footer__devs">
-        <a class="page-footer__devs-link" href="">HTML Academy
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
-          </svg>
-        </a>
-      </section>
-    </div>
-  </footer>
+        </section>
+      </div>
+    </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2cc36e38-470d-4e82-b63d-637d0c2cab16" type="text/javascript"></script>
     <script src="js/script.js"></script>
-
     <script type="text/javascript" src="js/ymaps.js"></script>
   </body>
 </html>

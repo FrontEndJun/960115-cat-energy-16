@@ -3,7 +3,7 @@
 }
 
 .page-header__logo-link {
-  display: inline-block;
+  display: block;
   padding: 0;
   padding-top: 11px;
   padding-bottom: 17px;
@@ -300,12 +300,12 @@
     height: 696px;
 
     background-color: $bg-green;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg");
       background-size: 720px auto;
     }
   }

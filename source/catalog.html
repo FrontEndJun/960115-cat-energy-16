@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="container page-header__container">
         <a class="page-header__logo-link"  href="index.html">
@@ -371,7 +374,7 @@
         <section class="page-footer__devs">
           <a class="page-footer__devs-link" href="">HTML Academy
             <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </section>
