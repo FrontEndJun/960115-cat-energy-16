@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cat Energy - подбор программы питания</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -35,9 +36,91 @@
       </div>
 
     </header>
-      <main class="p-main">
+    <main class="page-main">
+      <section class="program-selection">
+        <div class="container">
+          <h1 class="program-selection__title">Подбор программы</h1>
+          <form class=" programm-selection__form program-form " action="" method="post">
+            <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <fieldset class="program-form__field">
+              <div class="program-form__input-wrap">
+                <label for="name">имя:*</label>
+                <input type="text" id="name" name="name">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="weight">вес(кг):*</label>
+                <input type="text" id="weight" name="weight">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="age">возраст(лет):</label>
+                <input type="text" id="age" name="age">
+              </div>
+            </fieldset>
 
-      </main>
+            <fieldset class="program-form__field">
+              <div class="program-form__input-wrap">
+                <input type="radio" id="slim" name="food-program" value="slim">
+                <label for="slim">похудение</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="radio" id="pro" name="food-program" value="pro">
+                <label for="pro">набор массы</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="radio" id="advice" name="food-program" value="advice">
+                <label for="advice">не знаю (нужен ваш совет)</label>
+                <span class="indicator"></span>
+              </div>
+            </fieldset>
+
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Контактные данные (владельца кота)</legend>
+              <div class="program-form__input-wrap">
+                <label for="mail">e-mail:*</label>
+                <input type="email" id="mail" name="mail">
+              </div>
+              <div class="program-form__input-wrap">
+                <label for="tel">телефон:*</label>
+                <input type="tel" id="tel" name="tel">
+              </div>
+            </fieldset>
+
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Комментарий</legend>
+              <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+
+            <fieldset class="program-form__field">
+              <legend class="program-form__title">Дополнительно</legend>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="sweetener" name="add-items" value="slim">
+                <label for="sweetener">Сахарозаменитель</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="water" name="add-items" value="pro">
+                <label for="water">питьевая вода</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap">
+                <input type="checkbox" id="milk" name="add-items" value="milk">
+                <label for="milk">молоко</label>
+                <span class="indicator"></span>
+              </div>
+              <div class="program-form__input-wrap" >
+                <input type="checkbox" id="vitamins" name="add-items" value="vitamins">
+                <label for="vitamins">витамины</label>
+                <span class="indicator"></span>
+              </div>
+            </fieldset>
+            <button class="btn btn--submit" type="submit">отправить заявку</button>
+            <p class="program-form__legend"><sup>*</sup>&mdash; Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="page-footer">
       <section class="contacts">
 
