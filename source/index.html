@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Cat Energy - Функциональное питание для котов и кошек</title>
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -57,7 +60,7 @@
               <img class="promo__img"  src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x">
             </picture>
           </div>
-          <a href="" class="promo__btn btn">подобрать программу</a>
+          <a class="promo__btn btn" href="form.html" >подобрать программу</a>
         </section>
         <section class="diets">
           <h2 class="visually-hidden">Программы питания Cat Energy</h2>
@@ -70,7 +73,7 @@
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
               Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="diet__link" href="">Каталог Slim</a>
+            <a class="diet__link" href="catalog-slim.html">Каталог Slim</a>
           </article>
           <article class="diets__diet diet ">
             <div class="diet__icon diet__icon--pro">
@@ -81,7 +84,7 @@
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="diet__link" href="">Каталог pro</a>
+            <a class="diet__link" href="catalog-pro.html">Каталог pro</a>
           </article>
         </section>
         <section class="advantages">
@@ -116,16 +119,12 @@
     </main>
     <footer class="page-footer">
       <section class="contacts contacts--bg-white">
-
-
-            <div class="contacts__info" >
-              <h2 class="visually-hidden">Наш адрес</h2>
-              <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
-              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-                <span>Санкт-Петербург</span></p>
-            </div>
-
-
+        <div class="contacts__info" >
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span></p>
+        </div>
         <section class="map contacts__map" id="map-canvas">
 
         </section>
@@ -143,8 +142,10 @@
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--fb" href=""><svg ><use
-              xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
+            <a class="socials__link socials__link--fb" href="">
+              <svg ><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              FaceBook
+            </a>
           </li>
         </ul>
         <section class="page-footer__devs">
@@ -157,7 +158,7 @@
       </div>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2cc36e38-470d-4e82-b63d-637d0c2cab16" type="text/javascript"></script>
-    <script src="js/script.js"></script>
-    <script type="text/javascript" src="js/ymaps.js"></script>
+    <script src="js/script.min.js"></script>
+    <script type="text/javascript" src="js/ymaps.min.js"></script>
   </body>
 </html>

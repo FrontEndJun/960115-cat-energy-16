@@ -1,0 +1,388 @@
+.program-form {
+
+}
+
+.program-form__text {
+  padding-right: 50px;
+  margin: 0;
+  margin-bottom: 42px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.program-form__field {
+
+  padding: 0;
+  padding-bottom: 21px;
+  margin: 0;
+  margin-bottom: 9px;
+  border: none;
+  overflow-x: visible;
+
+  &:first-of-type {
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 13px;
+  }
+}
+
+.program-form__field--border {
+  padding-top: 21px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50vw;
+
+    width: 150vw;
+    height: 1px;
+
+
+    background-color: #d9d9d9;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50vw;
+
+    width: 150vw;
+    height: 1px;
+
+
+    background-color: #d9d9d9;
+  }
+}
+
+.program-form__title {
+  position: relative;
+  padding: 0;
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 24px);
+
+    width: 200vw;
+    height: 3px;
+
+    background-color: $bg-green;
+  }
+}
+
+
+.program-form__input-wrap--text {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.program-form__input-wrap--chb,
+.program-form__input-wrap--radio {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.program-form__input-wrap--chb > .program-form__label,
+.program-form__input-wrap--radio > .program-form__label {
+  padding-left: 47px;
+  cursor: pointer;
+}
+
+.program-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.program-form__legend {
+  margin: 0;
+  text-align: center;
+}
+
+.program-form__input-text {
+  width: 100%;
+  margin-left: 18px;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 13px 15px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  color: #444444;
+  //flex-grow: 1;
+  border: 1px solid #e6e6e6;
+  font-family: "Oswald", sans-serif;
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.program-form__input-text--icon {
+  padding-right: 34px;
+}
+
+.program-form__input-text:hover,
+.program-form__input-textarea:hover {
+  border-color: #cdcdcd;
+}
+
+.program-form__input-text:focus,
+.program-form__input-textarea:focus {
+  border-color: #444444;
+  border-width: 2px;
+  outline: none;
+}
+
+.program-form__input-text:invalid {
+  border-color: #ff8282;
+  border-width: 2px;
+}
+
+.program-form__input-wrap > .indicator {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.program-form__input-wrap--radio > .indicator {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .indicator::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-color: $bg-green;
+}
+
+input[type="radio"]:focus + .indicator,
+input[type="radio"]:hover + .indicator,
+input[type="checkbox"]:focus + .indicator,
+input[type="checkbox"]:hover + .indicator{
+  border-color: #bcbcbc;
+}
+
+input[type="checkbox"]:checked + .indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+
+  background-color: $bg-green;
+  mask-image: url("../../img/icon-tick.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 21px 16px;
+}
+
+input[type="radio"]:active + .indicator,
+input[type="radio"]:active ~ .program-form__label,
+input[type="checkbox"]:active + .indicator,
+input[type="checkbox"]:active ~ .program-form__label {
+  opacity: 0.5;
+}
+
+.program-form__input-text--area {
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.program-form__btn {
+  margin-bottom: 21px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-form {
+    padding-right: 35px;
+    padding-left: 40px;
+  }
+
+  .program-form__text {
+    padding: 0;
+    width: 340px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-form__field {
+    padding-bottom: 72px;
+    margin-bottom: 4px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 54px;
+    }
+  }
+
+  .program-form__field--border {
+    padding: 24px 27px;
+    margin-bottom: 72px;
+    border: 1px solid #e6e6e6;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .program-form__title {
+    position: relative;
+    padding: 0 40px;
+    margin-bottom: 34px;
+    margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 20px;
+      left: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 100%;
+
+      width: 200vw;
+      height: 3px;
+
+      background-color: $bg-green;
+    }
+  }
+
+  .program-form__title br {
+    display: none;
+  }
+
+
+  .program-form__input-wrap--text {
+    margin-bottom: 20px;
+  }
+
+  .program-form__input-wrap--chb,
+  .program-form__input-wrap--radio {
+    padding: 10px 0;
+  }
+
+  .chbs-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -32px;
+  }
+
+  .program-form__input-wrap--chb {
+    margin-bottom: 0;
+    width: 50%;
+    margin-top: 32px;
+  }
+
+  .program-form__label{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-form__input-wrap--chb > .program-form__label,
+  .program-form__input-wrap--radio > .program-form__label {
+    padding-left: 59px;
+  }
+
+  .program-form__input-wrap > .indicator {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  input[type="radio"]:checked + .indicator::before {
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+
+  }
+
+  input[type="checkbox"]:checked + .indicator::before {
+    width: 38px;
+    height: 38px;
+  }
+
+  .program-form__btn {
+    display: inline-block;
+    width: 283px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .program-form__legend {
+    display: inline-block;
+    width: auto;
+    font-size: 16px;
+    line-height: 16px;
+    //text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .program-form__text {
+    padding: 0;
+    width: 340px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-form__input-wrap--chb {
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .program-form__btn {
+    width: 568px;
+    margin-right: 80px;
+  }
+}

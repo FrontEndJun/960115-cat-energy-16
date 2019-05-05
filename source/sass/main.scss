@@ -14,6 +14,7 @@ body {
   font-family: "Oswald", sans-serif;
 
   counter-reset: advantage-number;
+  overflow-x: hidden;
 }
 
 a {
@@ -24,3 +25,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
