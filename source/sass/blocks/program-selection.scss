@@ -1,0 +1,37 @@
+.program-selection {
+  padding-top: 26px;
+  padding-bottom: 32px;
+  overflow: hidden;
+}
+
+.program-selection__title {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-top: 55px;
+    padding-bottom: 72px;
+  }
+
+  .program-selection__title {
+    margin-bottom: 53px;
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-top: 78px;
+    padding-bottom: 82px;
+  }
+
+  .program-selection__title {
+    margin-bottom: 55px;
+
+  }
+}
