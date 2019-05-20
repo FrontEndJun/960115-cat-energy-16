@@ -51,7 +51,7 @@
 .example__stats-title {
   position: absolute;
   bottom: -16px;
-
+  left: 20px;
   width: 57px;
   padding: 0 15px;
 
@@ -212,14 +212,24 @@
 
   .example__stats-title {
     bottom: -6px;
-
+    left: auto;
+    min-width: 80px;
     width: auto;
     padding: 0 8px;
 
+    white-space: nowrap;
     font-size: 14px;
     line-height: 14px;
 
     background-color: #ffffff;
+  }
+
+  .example__stats-title--slim {
+    left: 24px;
+  }
+
+  .example__stats-title--time {
+    left: 11px;
   }
 
   .example__stats-value {

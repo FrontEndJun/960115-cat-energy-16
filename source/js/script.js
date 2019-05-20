@@ -24,8 +24,9 @@ burger.addEventListener('click', function (e) {
 });
 
 function slider(value) {
-  imgBefore.style.clip = `rect(0, ${690 - value}px, auto, 0`;
-  imgAfter.style.clip = `rect(0, auto, auto, ${690 - value}px)`
+  var picWidth = 690 - value;
+  imgBefore.style.clip = 'rect(0,' + picWidth + 'px, auto, 0';
+  imgAfter.style.clip = 'rect(0, auto, auto,' + picWidth + 'px)'
 }
 
 function remap(n, start1, stop1, start2, stop2) {
