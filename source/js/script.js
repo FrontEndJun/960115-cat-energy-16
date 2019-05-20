@@ -9,11 +9,6 @@ var thumbElem = document.querySelector('.example__slider-thumb');
 var remapVal;
 var isMobile = window.innerWidth >= 678 ? false : true;
 
-
-
-
-
-
 navList.classList.remove('page-header__nav--nojs');
 burger.addEventListener('click', function (e) {
   e.preventDefault();
@@ -36,7 +31,6 @@ function slider(value) {
 function remap(n, start1, stop1, start2, stop2) {
   return ((n-start1)/(stop1-start1))*(stop2-start2)+start2;
 }
-
 
 if (!isMobile) {
   var rightEdge = sliderElem.offsetWidth - thumbElem.offsetWidth;
@@ -95,8 +89,3 @@ function getCoords(elem) { // кроме IE8-
     left: box.left + pageXOffset
   };
 }
-
-
-
-
-
