@@ -5,8 +5,8 @@
 .page-header__logo-link {
   display: block;
   padding: 0;
-  padding-top: 11px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 15px;
 
   &:hover {
     opacity: 0.6;
@@ -59,7 +59,7 @@
 
 .page-header__nav-toggle {
   position: absolute;
-  top: -45px;
+  top: -42px;
   right: 0;
 
   width: 24px;
@@ -142,8 +142,7 @@
 
 .page-header__nav-link {
   display: block;
-  padding: 13px 0;
-  padding-bottom: 12px;
+  padding: 23px 0;
 
   font-weight: 500;
   font-size: 20px;
@@ -163,7 +162,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-header__nav--closed .page-header__nav-list {
-    display: none;
+    display: block; //TODO поменять потом на none
   }
 
   .page-header__nav--closed .page-header__nav-toggle {
@@ -222,7 +221,7 @@
   }
 
   .page-header__nav {
-    width: 445px;
+    width: 440px;
     margin-bottom: -15px;
 
     &::before {
@@ -295,14 +294,15 @@
     right: 0;
     z-index: -2;
 
-    width: 45vw;
-    max-width: 720px;
+    width: 50vw;
+    //max-width: 720px;
     height: 696px;
 
     background-color: $bg-green;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -311,7 +311,7 @@
   }
 
   .page-header__nav {
-    width: 482px;
+    width: 480px;
   }
 
   .page-header__nav-link {

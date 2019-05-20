@@ -1,3 +1,7 @@
+.diets {
+  margin-bottom: 17px;
+}
+
 .diets__diet {
   &:not(:last-of-type) {
     margin-bottom: 20px;
@@ -10,7 +14,7 @@
   }
 
   .diets {
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 }
 
@@ -18,7 +22,7 @@
   .diets {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
     margin-left: -80px;
   }
 

@@ -1,17 +1,5 @@
 .promo {
-  padding-top: 30px;
-
   color: #ffffff;
-
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-clip: border-box;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
 }
 
 .page-main__promo {
@@ -20,7 +8,7 @@
 
 .promo__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   font-weight: 400;
   font-size: 36px;
@@ -30,12 +18,32 @@
 
 .promo__slogan {
   margin: 0;
-  margin-bottom: 30px;
 
   font-weight: 400;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.promo__wrap {
+  min-height: 278px;
+  padding-top: 28px;
+
+  background-color: $bg-green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 1px;
+  background-clip: border-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+.promo__img-wrap {
+  margin-top: -139px;
+  margin-bottom: 4px;
 }
 
 .promo__img {
@@ -50,21 +58,27 @@
     flex-direction: column;
     min-height: 807px;
     padding: 0;
+    padding-top: 51px;
     padding-left: 90px;
-    padding-top: 60px;
 
     color: #000000;
-
-    background-image: none;
   }
 
   .page-main__promo {
     margin-bottom: 0;
   }
 
+  .promo__wrap {
+    min-height: 0;
+    padding: 0;
+
+    background-color: transparent;
+    background-image: none;
+  }
+
   .promo__title {
     width: 430px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     font-size: 60px;
     line-height: 60px;
@@ -72,7 +86,7 @@
   }
 
   .promo__slogan {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
 
     font-size: 20px;
     line-height: 20px;
@@ -83,7 +97,8 @@
     z-index: -1;
 
     order: 1;
-    margin-top: -65px;
+    margin-top: -80px;
+    margin-bottom: 0;
     margin-left: -90px;
   }
 
@@ -105,13 +120,17 @@
   .promo {
     position: relative;
 
-    min-height: 465px;
+    min-height: 474px;
+    padding-top: 103px;
     padding-left: 80px;
-    padding-top: 112px;
   }
 
   .page-main__promo {
     margin-bottom: 80px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 52px;
   }
 
   .promo__img-wrap {
@@ -120,8 +139,8 @@
     //position: absolute;
     //top: -84px;
     //left: 410px;
-    margin-top: -368px;
-    margin-right: -50px;
+    margin-top: -365px;
+    margin-right: -150px;
   }
 
   .promo__img {

@@ -44,7 +44,7 @@
       <section class="program-selection page-main__program-selection">
         <div class="container">
           <h1 class="program-selection__title">Подбор программы</h1>
-          <form class=" programm-selection__form program-form " action="" method="post">
+          <form class=" program-selection__form program-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="program-form__text">Заполните анкету и мы подберем
               программу питания для вашего кота</p>
             <fieldset class="program-form__field">
@@ -53,16 +53,16 @@
                 <input class="program-form__input-text" type="text" id="name" name="name">
               </div>
               <div class="program-form__input-wrap program-form__input-wrap--text">
-                <label class="program-form__label" for="weight">вес(кг):*</label>
+                <label class="program-form__label" for="weight">вес (кг):*</label>
                 <input class="program-form__input-text" type="text" id="weight" name="weight">
               </div>
               <div class="program-form__input-wrap program-form__input-wrap--text">
-                <label class="program-form__label" for="age">возраст(лет):</label>
+                <label class="program-form__label" for="age">возраст (лет):</label>
                 <input class="program-form__input-text" type="text" id="age" name="age">
               </div>
             </fieldset>
 
-            <fieldset class="program-form__field program-form__field--border">
+            <fieldset class="program-form__field program-form__field--bordered">
               <div class="program-form__input-wrap program-form__input-wrap--radio">
                 <input class="visually-hidden" type="radio" id="slim" name="food-program" value="slim" checked>
                 <span class="indicator"></span>
@@ -80,45 +80,53 @@
               </div>
             </fieldset>
 
-            <fieldset class="program-form__field">
-              <legend class="program-form__title">Контактные данные <br> (владельца кота)</legend>
-              <div class="program-form__input-wrap program-form__input-wrap--text">
-                <label class="program-form__label" for="mail">e-mail:*</label>
-                <input class="program-form__input-text  program-form__input-text--icon" type="email" id="mail" name="mail">
-              </div>
-              <div class="program-form__input-wrap program-form__input-wrap--text">
-                <label class="program-form__label" for="tel">телефон:*</label>
-                <input class="program-form__input-text program-form__input-text--icon" type="tel" id="tel" name="tel" pattern="8([ -]?)[(]?[0-9]{3}[)]?([ -]?)[0-9]{3}([ -]?)[0-9]{2}([ -]?)[0-9]{2}">
+
+            <fieldset class="program-form__field program-form__field-titled program-form__field-titled--mt">
+              <legend class="program-form__title">Контактные данные<br> (владельца кота)</legend>
+              <div class="program-form__flex-columns">
+                <div class="program-form__input-wrap program-form__input-wrap--text program-form__input-wrap--icon">
+                  <label class="program-form__label" for="mail">e-mail:*</label>
+                  <input class="program-form__input-text  program-form__input-text--icon" type="email" id="mail" name="mail">
+                  <svg class="program-form__input-icon program-form__input-icon--mail" width="17" height="13"><use
+                    xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                </div>
+                <div class="program-form__input-wrap program-form__input-wrap--text program-form__input-wrap--icon">
+                  <label class="program-form__label" for="tel">телефон:*</label>
+                  <input class="program-form__input-text program-form__input-text--icon" type="tel" id="tel" name="tel" pattern="8([ -]?)[(]?[0-9]{3}[)]?([ -]?)[0-9]{3}([ -]?)[0-9]{2}([ -]?)[0-9]{2}">
+                  <svg class="program-form__input-icon program-form__input-icon--phone" width="20" height="20"><use
+                    xlink:href="img/sprite.svg#icon-phone"></use></svg>
+                </div>
               </div>
             </fieldset>
 
-            <fieldset class="program-form__field">
+            <fieldset class="program-form__field program-form__field-titled">
               <legend class="program-form__title">Комментарий</legend>
-              <div class="program-form__input-wrap program-form__input-wrap--text">
+              <div class="program-form__input-wrap program-form__input-wrap--textarea">
                 <textarea class="program-form__input-text program-form__input-text--area" name="comment"
-                          placeholder="Расскажите обо всех повадках кота"></textarea>
+                          placeholder="Расскажите обо всех повадках котa"></textarea>
               </div>
             </fieldset>
 
-            <fieldset class="program-form__field">
+
+            <fieldset class="program-form__field program-form__field-titled">
               <legend class="program-form__title">Дополнительно</legend>
-              <div class="chbs-wrap">
-                <div class="program-form__input-wrap program-form__input-wrap--chb">
+              <div class="program-form__checkbox-wrap">
+                <div class="program-form__input-wrap program-form__input-wrap--checkbox">
                   <input class="visually-hidden" type="checkbox" id="sweetener" name="add-items" value="slim">
                   <span class="indicator"></span>
                   <label class="program-form__label" for="sweetener">Сахарозаменитель</label>
                 </div>
-                <div class="program-form__input-wrap program-form__input-wrap--chb">
+                <div class="program-form__input-wrap program-form__input-wrap--checkbox">
                   <input class="visually-hidden" type="checkbox" id="water" name="add-items" value="pro">
                   <span class="indicator"></span>
                   <label class="program-form__label" for="water">питьевая вода</label>
                 </div>
-                <div class="program-form__input-wrap program-form__input-wrap--chb">
+                <div class="program-form__input-wrap program-form__input-wrap--checkbox">
                   <input class="visually-hidden" type="checkbox" id="milk" name="add-items" value="milk">
                   <span class="indicator"></span>
                   <label class="program-form__label" for="milk">молоко</label>
                 </div>
-                <div class="program-form__input-wrap program-form__input-wrap--chb">
+                <div class="program-form__input-wrap program-form__input-wrap--checkbox">
                   <input class="visually-hidden" type="checkbox" id="vitamins" name="add-items" value="vitamins">
                   <span class="indicator"></span>
                   <label class="program-form__label" for="vitamins">витамины</label>
@@ -126,7 +134,7 @@
               </div>
             </fieldset>
             <button class="btn program-form__btn" type="submit">отправить заявку</button>
-            <p class="program-form__legend"><sup>*</sup>&mdash; Обязательные поля</p>
+            <p class="program-form__legend">* &mdash; Обязательные поля</p>
           </form>
         </div>
       </section>
@@ -137,7 +145,8 @@
 
         <div class="contacts__info">
           <h2 class="visually-hidden">Наш адрес</h2>
-          <h3 class="contacts__offering">приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="contacts__offering">приглашаем
+            к сотрудничеству дилеров!</h3>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
             <span>Санкт-Петербург</span></p>
         </div>
@@ -148,24 +157,29 @@
         </section>
       </section>
       <div class="container page-footer__container">
-        <a class="page-footer__logo" href="" ><img src="img/footer-logo.png" alt=""></a>
+        <a class="page-footer__logo" href="">
+          <img src="img/logo-footer.svg" alt="CatEnergy логотип" width="128" height="24">
+        </a>
         <ul class="socials page-footer__socials">
           <li class="socials__item">
-            <a class="socials__link socials__link--vk" href=""><svg ><use xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
+            <a class="socials__link socials__link--vk" href=""><svg width="22" height="12" ><use
+              xlink:href="img/sprite.svg#icon-vk"></use></svg>VK</a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--ig" href="">
-              <svg ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              <svg width="16" height="16" ><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
               Instagram
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--fb" href=""><svg ><use
-              xlink:href="img/sprite.svg#icon-fb"></use></svg>FaceBook</a>
+            <a class="socials__link socials__link--fb" href="">
+              <svg width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              FaceBook
+            </a>
           </li>
         </ul>
         <section class="page-footer__devs">
-          <a class="page-footer__devs-link" href="">HTML Academy
+          <a class="page-footer__devs-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>

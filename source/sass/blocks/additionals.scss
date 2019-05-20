@@ -1,8 +1,11 @@
+.additionals {
+  padding-top: 28px;
+}
 
 .additionals__title {
   position: relative;
 
-  margin: 35px 0;
+  margin: 0 0 34px;
 
   font-weight: 400;
   font-size: 24px;
@@ -26,15 +29,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additionals {
+    padding-top: 67px;
+  }
+
   .additionals__title {
-    width: 410px;
-    margin: 0 0 76px;
+    width: 412px;
+    margin: 0 0 80px;
 
     font-size: 36px;
     line-height: 36px;
     text-align: center;
 
     &::before {
+      top: calc(50% + 4px);
       left: 100%;
 
       width: 100vw;
@@ -43,7 +51,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: calc(50% + 2px);
+      top: calc(50% + 4px);
       right: 100%;
 
       width: 100vw;
@@ -62,10 +70,12 @@
   .additionals {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 76px;
   }
 
   .additionals__title {
     width: auto;
+    margin-bottom: 81px;
 
     text-align: left;
 

@@ -1,48 +1,52 @@
 .special-offer {
-  position: relative;
-
-  display: flex;
   width: 280px;
-  height: 289px;
+  padding-top: 65px;
+  padding-bottom: 42px;
 
   background-color: $bg-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
-    background-size: contain;
+    background-size: cover;
   }
 }
 
 .special-offer__icon {
-  position: absolute;
-  top: 65px;
-  left: 113px;
-
+  display: block;
   width: 55px;
   height: 60px;
+  margin: 0 auto;
 
   fill: #ffffff;
 }
 
 .special-offer__text {
   width: 165px;
-  margin: auto auto 45px;
+  margin: 62px auto 0;
 
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
+  white-space: pre-line;
 }
 
 @media (min-width: $tablet-width) {
   .special-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
     width: 100%;
-    height: 200px;
+    padding-top: 65px;
+    padding-right: 120px;
+    padding-bottom: 75px;
+    padding-left: 92px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
@@ -52,20 +56,23 @@
   }
 
   .special-offer__icon {
-    top: 65px;
-    left: 91px;
+    margin: 0;
   }
 
   .special-offer__text {
-    margin: auto 125px auto auto;
+    margin: 0;
+    margin-bottom: -13px;
+
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .special-offer {
+    flex-direction: column;
     width: 245px;
-    height: 289px;
     margin-left: auto;
+    padding: 65px 0 40px;
 
     background-color: $bg-green;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
@@ -75,13 +82,10 @@
     }
   }
 
-  .special-offer__icon {
-    top: 65px;
-    left: 96px;
-  }
 
   .special-offer__text {
-    margin: auto;
-    margin-bottom: 45px;
+    margin: 0;
+
+    text-align: center;
   }
 }

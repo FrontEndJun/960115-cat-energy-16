@@ -16,7 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-var uglify = require("gulp-uglify");
+var terser = require("gulp-terser");
 var pipeline = require('readable-stream').pipeline;
 
 
@@ -108,13 +108,12 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin())
     .pipe(gulp.dest("./build"));
 });
 
 gulp.task("js", function () {
   return gulp.src("./source/js/*.js")
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(rename({
       suffix: ".min",
       extname: ".js"

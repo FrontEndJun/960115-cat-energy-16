@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 26px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 
   &::before {
     content: "";
@@ -34,6 +34,7 @@
 .show-more__icon {
   width: 30px;
   height: 30px;
+  margin-bottom: 20px;
 
   transform: translateX(125px);
 
@@ -41,13 +42,20 @@
 }
 
 .show-more__option {
+  margin: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  padding-top: 8px;
+
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
@@ -61,8 +69,10 @@
     align-items: center;
     box-sizing: border-box;
     width: 324px;
-    padding: 56px 38px;
-    padding-bottom: 40px;
+    padding-top: 54px;
+    padding-right: 36px;
+    padding-bottom: 38px;
+    padding-left: 39px;
 
     border: 1px solid darken($bg-grey, 10%);
 
@@ -87,13 +97,15 @@
 
   .show-more__option {
     width: 145px;
+    margin-bottom: 24px;
 
     font-size: 20px;
   }
 
   .show-more__text {
     width: 180px;
-    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;
 
     font-size: 16px;
     line-height: 20px;
