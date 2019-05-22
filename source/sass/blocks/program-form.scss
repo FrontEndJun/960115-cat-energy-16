@@ -241,12 +241,12 @@ input[type="checkbox"]:checked + .indicator::before {
   width: 28px;
   height: 28px;
 
-  background-color: $bg-green;
+  //background-color: $bg-green;
 
-  mask-image: url("../../img/icon-tick.svg");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 21px 16px;
+  background-image: url("../../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 21px 16px;
 }
 
 input[type="radio"]:active + .indicator,
