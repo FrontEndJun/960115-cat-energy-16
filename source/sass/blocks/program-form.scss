@@ -241,11 +241,9 @@ input[type="checkbox"]:checked + .indicator::before {
   width: 28px;
   height: 28px;
 
-  //background-color: $bg-green;
-
   background-image: url("../../img/icon-tick.svg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 21px 16px;
 }
 
